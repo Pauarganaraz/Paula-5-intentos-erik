@@ -1,0 +1,29 @@
+Algoritmo max5Intentos
+	definir USUARIO como texto;
+	definir CONTRASENIA como texto;
+	definir CANTIDAD_INTENTO Como Entero;
+	USUARIO = "";
+	CONTRASENIA = "";
+	CANTIDAD_INTENTO = 5;
+	
+	Para iterador = 1 Hasta 5 Con Paso 1 Hacer
+		escribir "ingrese su usuario"
+		leer USUARIO;
+		escribir "ingrese su contrasenia";
+		leer CONTRASENIA; 
+	
+		Si iterador = 5 Entonces
+			escribir "intente dentro de 24hs";
+		SiNo
+			Si USUARIO == "erik"  Entonces;
+				iterador = 5;
+				Escribir "bienvenido";
+			SiNo
+				escribir "error";
+				Escribir  "vuelva a intentar";
+			Fin Si
+			
+		Fin Si
+	Fin Para
+	
+FinAlgoritmo
